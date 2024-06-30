@@ -1,3 +1,7 @@
+/**
+ * Envia datos de forma a controlador php.
+ * @returns {string}
+ */
 $(document).ready(function(){
     $("#submit_voto").click(function(){
         if(valida_email() == true && valida_nombre() == true && valida_alias() == true && valida_rut() == true && valida_box() == true && valida_select_candidato() == true && valida_select_region() == true && valida_select_comuna() == true){
