@@ -55,28 +55,28 @@ $(document).ready(function(){
             let str = ""
 
             if(valida_email() == false){
-                str = str + "- Formato de email invalido" + "\n"
+                str = str + "- Formato de email invalido." + "\n"
             }
             if(valida_nombre() == false){
-                str = str + "- Nombre no debe ser vacío!"  + "\n"
+                str = str + "- Nombre no debe ser vacío."  + "\n"
             }
             if(valida_alias() == false){
-                str = str + "- Alias debe poseer al menos 5 caracteres entre letras y numeros!"  + "\n"
+                str = str + "- Alias debe poseer al menos 5 caracteres entre letras y numeros."  + "\n"
             }
             if(valida_rut() == false){
-                str = str + "- Formato de Rut invalido"  + "\n"
+                str = str + "- Formato de Rut invalido."  + "\n"
             }
             if(valida_box() == false){
-                str = str + "- Sección 'como se entero de nosotros' debe marcar menos 2 opciones"  + "\n"
+                str = str + "- Sección 'como se entero de nosotros' debe marcar menos 2 opciones."  + "\n"
             }
             if(valida_select_candidato() == false){
-                str = str + "- Candidato no seleccionado"  + "\n"
+                str = str + "- Candidato no seleccionado."  + "\n"
             }
             if(valida_select_region() == false){
-                str = str + "- Región no seleccionada"  + "\n"
+                str = str + "- Región no seleccionada."  + "\n"
             }
             if(valida_select_comuna() == false){
-                str = str + "- Comuna no seleccionada"  + "\n"
+                str = str + "- Comuna no seleccionada."  + "\n"
             }
             alert(str)
         }    
