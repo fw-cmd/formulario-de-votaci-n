@@ -1,0 +1,12 @@
+PHP Ver: 8.2.12
+Server version: 10.4.32-MariaDB - mariadb.org binary distribution
+
+Instalacion de Proyecto:
+
+1) Clonar o Descargar proyecto de Git.
+2) Instalar Xampp.
+3) En el directorio de instalacion de xampp, mover el proyecto completo (prueba_diagnostico) a la carpeta "htdocs".
+4) Lanzar Xampp e inicializar los modulos "Apache" y "MySql".
+5) Click en el boton "Admin" en la fila de "Mysql".
+6) Ya dentro de "phpMyAdmin" crear una nueva base de datos llamada "v_db" e importar la base de datos de mismo nombre en la carpeta "sql" en la misma.
+7) Dirigirse a la dirección "http://localhost/prueba_diagnostico/index.php" para inicializar el proyecto
