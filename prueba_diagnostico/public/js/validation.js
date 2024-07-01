@@ -99,24 +99,20 @@ function valida_rut() {
       return false;
 
     }else{
-      var matches_number = dv.match(/\d+/g);
-      if(matches_number != null){      
+      var M=0
+      var S=1;
+      for(;rut;rut=Math.floor(rut/10))
+        S=(S+rut%10*(9-M++%6))%11;
+      var ult = S?S-1:'k';
+
+      if(dv == ult){ 
         rut_id.classList.remove("border-danger");
         rut_id.classList.add("border-success");
         return true;
-
       }else{
-        if(dv == "k" || dv == "K"){ 
-          rut_id.classList.remove("border-danger");
-          rut_id.classList.add("border-success");
-          return true;
-
-        }else{
           rut_id.classList.remove("border-success");
           rut_id.classList.add("border-danger");
           return false;
-
-        }
       }
     } 
   } 
@@ -132,10 +128,8 @@ function valida_box() {
   let rs_id = 0;
   let amigo_id = 0;
 
-
   if(document.getElementById('web_id').checked) {
     web_id = 1;
-
   }
   if(document.getElementById('tv_id').checked) {
     tv_id = 1;
